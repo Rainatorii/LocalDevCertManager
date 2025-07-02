@@ -1,2 +1,21 @@
-# Auto detect text files and perform LF normalization
+# ===== Line Endings =====
 * text=auto
+
+# Force LF endings on shell scripts (Linux style)
+*.sh text eol=lf
+
+# Force CRLF endings on PowerShell scripts (Windows style)
+*.ps1 text eol=crlf
+
+# ===== Binary Files =====
+*.pfx binary
+*.cer binary
+*.crt binary
+*.key binary
+
+# Don't try to diff binary certs
+*.pfx -diff
+*.cer -diff
+
+# Optional: Markdown and README treated as text (just to be explicit)
+*.md text
