@@ -1,0 +1,17 @@
+# Ignore cert outputs
+certs/
+*.pfx
+*.cer
+*.key
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor settings
+.vscode/
+*.code-workspace
+
+# Ignore logs and temp files
+*.log
+*.tmp
